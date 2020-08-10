@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.maddi.fitness.Energy"
+    tools:showIn="@layout/activity_energy">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="137dp"
+        android:layout_height="36dp"
+        android:text="SLEEP"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="114dp" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="enter in hours"
+        tools:layout_editor_absoluteX="171dp"
+        tools:layout_editor_absoluteY="104dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="141dp"
+        android:layout_height="39dp"
+        android:text="energy level"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="189dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="115dp"
+        android:layout_height="30dp"
+        android:text="LOW"
+        tools:layout_editor_absoluteX="193dp"
+        tools:layout_editor_absoluteY="189dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:text="MEDIUM"
+        tools:layout_editor_absoluteX="193dp"
+        tools:layout_editor_absoluteY="228dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton3"
+        android:layout_width="115dp"
+        android:layout_height="34dp"
+        android:text="HIGH"
+        tools:layout_editor_absoluteX="193dp"
+        tools:layout_editor_absoluteY="266dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="362dp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="464dp" />
+
+</android.support.constraint.ConstraintLayout>

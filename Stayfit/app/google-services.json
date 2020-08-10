@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "186678475346",
+    "firebase_url": "https://fir-trial-3c632.firebaseio.com",
+    "project_id": "fir-trial-3c632",
+    "storage_bucket": "fir-trial-3c632.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:186678475346:android:2d70be156b1c4f46d0bd8b",
+        "android_client_info": {
+          "package_name": "com.example.maddi.fitness"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "186678475346-691am86112d6tb0grg32m2iogkm1uuj9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.maddi.fitness",
+            "certificate_hash": "7afbef78751fec27541701ff4deabf852ea1fab6"
+          }
+        },
+        {
+          "client_id": "186678475346-l9t3878kpbqokj2ipfhdh3e965h45ajf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvvYXp417m_di4XF5nR1vZ0bit3uEhils"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "186678475346-l9t3878kpbqokj2ipfhdh3e965h45ajf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

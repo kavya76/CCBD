@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.maddi.fitness">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.sensor.stepdetector"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.sensor.stepcounter"
+        android:required="false" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_yoga"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Youtube -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".ChartActivity"
+            android:label="Rahul Data" />
+        <!-- <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/> -->
+        <!-- <activity android:name="com.facebook.FacebookActivity" -->
+        <!-- android:configChanges= -->
+        <!-- "keyboard|keyboardHidden|screenLayout|screenSize|orientation" -->
+        <!-- android:theme="@android:style/Theme.Translucent.NoTitleBar" -->
+        <!-- android:label="@string/app_name" /> -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"
+            tools:replace="android:value" />
+
+        <!-- <activity -->
+        <!-- android:name="com.facebook.FacebookActivity" -->
+        <!-- android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation" -->
+        <!-- android:theme="@android:style/Theme.Translucent.NoTitleBar" -->
+        <!-- android:label="@string/app_name" -->
+        <!-- android:launchMode="singleInstance" -->
+        <!-- android:screenOrientation="portrait"/> -->
+        <activity
+            android:name=".OverviewActivity"
+            android:label="Overview" />
+        <activity
+            android:name=".FoodSummaryActivity"
+            android:label="Food Summary" />
+        <activity
+            android:name=".AppIntroActivity"
+            android:label="AppIntro" />
+        <activity
+            android:name=".BasicInfoActivity"
+            android:label="BasicInfo" />
+        <activity android:name=".EnterInfoActivity" />
+        <activity
+            android:name=".Activity_ChangeGoal"
+            android:label="Change Goals" />
+        <activity
+            android:name=".SetGoalActivity"
+            android:label="Set Goal" />
+        <activity
+            android:name=".Food_RecyclerFrag_Main"
+            android:configChanges="orientation|screenSize"
+            android:label="Add Food"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Act_RecyclerFrag_Main"
+            android:configChanges="orientation|screenSize"
+            android:label="Add Activity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AskLocationActivity"
+            android:label="Select Location" />
+        <activity
+            android:name=".LoadMapActivity"
+            android:label="Map Loaction" />
+        <activity android:name=".Activity_ViewPager">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.maddi.fitness.MainActivity" />
+        </activity>
+        <activity
+            android:name=".AccountActivity"
+            android:label="Settings" />
+
+        <service
+            android:name=".GeocodeAddressIntentService"
+            android:exported="false" />
+
+        <activity android:name=".BmiActivity" />
+    </application>
+
+</manifest>
